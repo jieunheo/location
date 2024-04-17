@@ -12,7 +12,7 @@ svg{
 
 #heart{
   /*색 보충*/
-  fill: #eee;
+  fill: #bebebe;
 
   /*stroke속성은 선, 문자, 원소등의 테두리에대해서 디자인 가능*/
   stroke: var(--c);
