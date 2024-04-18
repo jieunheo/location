@@ -32,8 +32,10 @@
       $('#name'+type).addClass('active');
       let type_name = 'Sky';
       switch (type) {
-        case '1': type_name = 'Blossoms'; break;
-        case '2': type_name = 'Leaf'; break;
+        case '1':
+        case 1: type_name = 'Blossoms'; break;
+        case '2':
+        case 2: type_name = 'Leaf'; break;
       }
       $('#name'+type+" a").html(type_name);
 
