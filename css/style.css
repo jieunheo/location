@@ -15,19 +15,41 @@ body {
   background-size: cover;
 }
 
+.active {
+  font-weight: 900;
+}
+
 main {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
+  text-align: center;
+}
+
+main .types_wrap {
+  display: inline-block;
+  background-color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+}
+
+main .types_wrap .flex {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+main .types_wrap a {
+  font-size: 1rem;
 }
 
 main .photo-wrap {
   width: 100%;
   max-width: 400px;
   min-width: 160px;
-  text-align: center;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
   padding: 8vw 3vw 5vw;
@@ -137,6 +159,10 @@ footer {
     width: 25px !important;
   }
 
+  .types_wrap a {
+    font-size: 0.8rem;
+  }
+
   .btn-wrap {
     font-size: 1rem;
   }
@@ -159,6 +185,9 @@ footer {
 .type0 .btn-wrap div:hover {
   color: #42a5e9;
 }
+.type0 .active {
+  color: #42a5e9;
+}
 
 .type1 {
   background-image: url('../img/pngtree-cherry-trees-in-boseong-sangok-south-korea-image_13149449.jpg');
@@ -171,6 +200,9 @@ footer {
 .type1 .btn-wrap div:hover {
   color: #ff8395;
 }
+.type1 .active {
+  color: #ff8395;
+}
 
 .type2 {
   background-image: url('../img/road-marking-greens-summer-trees-1104469-wallhere.com.jpg');
@@ -181,5 +213,8 @@ footer {
   background-size: 135%;
 }
 .type2 .btn-wrap div:hover {
+  color: #0abd04;
+}
+.type2 .active {
   color: #0abd04;
 }

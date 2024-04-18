@@ -17,16 +17,42 @@
   <script src="./js/blossom.js"></script>
   <script>
     $(window).load(function () {
-      const randomNum = Math.random() * 2;
-      const randomNumFloor = Math.round(randomNum);
-      
-      $('body').addClass('type'+randomNumFloor);
+      const searchParams = new URLSearchParams(location.search);
+      let type = '';
+      for (const param of searchParams) {
+        type = param[1];
+        console.log(type);
+      }
+
+      if(!type) {
+        const randomNum = Math.random() * 2;
+        type = Math.round(randomNum);
+      }
+      $('body').addClass('type'+type);
+
+      $('#name'+type).addClass('active');
+      let type_name = 'Sky';
+      switch (type) {
+        case '1': type_name = 'Blossoms'; break;
+        case '2': type_name = 'Leaf'; break;
+      }
+      $('#name'+type+" a").html(type_name);
+
       $('body').sakura();
     });
   </script>
 </head>
 <body>
+
   <main>
+    <div class="types_wrap">
+      <div class="flex">
+        <div id="name0" data-type="S"><a href="?type=0">S</a></div>
+        <div id="name1" data-type="B"><a href="?type=1">B</a></div>
+        <div id="name2" data-type="L"><a href="?type=2">L</a></div>
+      </div>
+    </div>
+
     <div class="photo-wrap">
       <h1>Wedding Day</h1>
       <h2>2024.08.31</h2>
