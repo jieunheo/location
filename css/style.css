@@ -52,7 +52,7 @@ main .photo-wrap {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 8vw 3vw 5vw;
+  padding: 2rem 0.5rem;
 
   border: 2px solid #fff;
 }
@@ -79,7 +79,7 @@ h3 {
   justify-content: center;
   gap: 8px;
   font-weight: 500;
-  margin-top: 5vw;
+  margin-top: 2rem;
 }
 
 .img {
@@ -88,7 +88,7 @@ h3 {
   max-height: 370px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3vw;
+  margin-top: 1rem;
 
   border: 2px solid #fff;
 
@@ -142,7 +142,7 @@ footer {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 400px){
   h1 {
     font-size: 2rem;
   }
@@ -153,10 +153,19 @@ footer {
 
   h3 {
     font-size: 1rem;
+    margin-top: 5vw;
   }
 
   svg {
     width: 25px !important;
+  }
+
+  main .photo-wrap {
+    padding: 8vw 3vw 5vw;
+  }
+
+  .img {
+    margin-top: 3vw;
   }
 
   .types_wrap a {
