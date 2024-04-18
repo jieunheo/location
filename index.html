@@ -37,10 +37,14 @@
         case '2':
         case 2: type_name = 'Leaf'; break;
       }
-      $('#name'+type+" a").html(type_name);
+      $('#name'+type+" button").html(type_name);
 
       $('body').sakura();
     });
+
+    function go_type(type) {
+      window.location.replace("?type=" + type);
+    }
   </script>
 </head>
 <body>
@@ -48,9 +52,9 @@
   <main>
     <div class="types_wrap">
       <div class="flex">
-        <div id="name0" data-type="S"><a href="?type=0">S</a></div>
-        <div id="name1" data-type="B"><a href="?type=1">B</a></div>
-        <div id="name2" data-type="L"><a href="?type=2">L</a></div>
+        <div id="name0" data-type="S"><button onclick="go_type(0)">S</button></div>
+        <div id="name1" data-type="B"><button onclick="go_type(1)">B</button></div>
+        <div id="name2" data-type="L"><button onclick="go_type(2)">L</button></div>
       </div>
     </div>
 

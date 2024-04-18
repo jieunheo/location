@@ -8,6 +8,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+button {
+  border: none;
+  background-color: inherit;
+}
 body {
   height: 90vh;
   background-position: center;
@@ -15,7 +19,7 @@ body {
   background-size: cover;
 }
 
-.active {
+.active button {
   font-weight: 900;
 }
 
@@ -41,7 +45,7 @@ main .types_wrap .flex {
   justify-content: center;
 }
 
-main .types_wrap a {
+main .types_wrap button {
   font-size: 1rem;
 }
 
@@ -168,7 +172,7 @@ footer {
     margin-top: 3vw;
   }
 
-  .types_wrap a {
+  .types_wrap button {
     font-size: 0.8rem;
   }
 
@@ -200,7 +204,7 @@ footer {
 .type0 .btn-wrap div:hover {
   color: #42a5e9;
 }
-.type0 .active {
+.type0 .active button {
   color: #42a5e9;
 }
 
@@ -215,7 +219,7 @@ footer {
 .type1 .btn-wrap div:hover {
   color: #ff8395;
 }
-.type1 .active {
+.type1 .active button {
   color: #ff8395;
 }
 
@@ -230,6 +234,6 @@ footer {
 .type2 .btn-wrap div:hover {
   color: #0abd04;
 }
-.type2 .active {
+.type2 .active button {
   color: #0abd04;
 }
