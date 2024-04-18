@@ -175,11 +175,11 @@ footer {
 
 /* 배경화면별 스타일 */
 .type0 {
-  background-image: url('../img/istockphoto-1128410927-612x612.jpg');
+  background-image: url('../img/sky_bg.jpg');
   background-color: #edf8fe;
 }
 .type0 .img {
-  background-image: url('../img/KakaoTalk_20240415_235222258_07-removebg-preview.png');
+  background-image: url('../img/sky.png');
   background-size: 105%;
 }
 .type0 .btn-wrap div:hover {
@@ -190,11 +190,11 @@ footer {
 }
 
 .type1 {
-  background-image: url('../img/pngtree-cherry-trees-in-boseong-sangok-south-korea-image_13149449.jpg');
+  background-image: url('../img/blossoms_bg.jpg');
   background-color: #8ca9db;
 }
 .type1 .img {
-  background-image: url('  ../img/KakaoTalk_20240415_235222258_04-removebg-preview.png');
+  background-image: url('../img/blossoms.png');
   background-size: 75%;
 }
 .type1 .btn-wrap div:hover {
@@ -205,11 +205,11 @@ footer {
 }
 
 .type2 {
-  background-image: url('../img/road-marking-greens-summer-trees-1104469-wallhere.com.jpg');
+  background-image: url('../img/leaf_bg.jpg');
   background-color: #447ad4;
 }
 .type2 .img {
-  background-image: url('  ../img/KakaoTalk_20240416_085707790_18-removebg-preview.png');
+  background-image: url('../img/leaf.png');
   background-size: 135%;
 }
 .type2 .btn-wrap div:hover {
