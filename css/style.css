@@ -10,15 +10,13 @@ a {
 }
 body {
   height: 90vh;
-  background-image: url('../img/istockphoto-1128410927-612x612.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #edf8fe;
 }
 
 main {
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
@@ -32,7 +30,7 @@ main .photo-wrap {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem 0.5rem;
+  padding: 8vw 3vw 5vw;
 
   border: 2px solid #fff;
 }
@@ -47,7 +45,7 @@ h1 {
 h2 {
   font-family: "Dancing Script", cursive;
   color: #fff;
-  margin-top: 0.4rem;
+  margin-top: 1vw;
 }
 h3 {
   font-family: "Gowun Dodum", sans-serif;
@@ -59,34 +57,22 @@ h3 {
   justify-content: center;
   gap: 8px;
   font-weight: 500;
-  margin-top: 2rem;
+  margin-top: 5vw;
 }
 
 .img {
   width: 80%;
-  height: 60vh;
+  height: 70vw;
   max-height: 370px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
+  margin-top: 3vw;
 
   border: 2px solid #fff;
 
-  background-image: url('../img/KakaoTalk_20240415_235222258_07-removebg-preview.png');
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-img::before {
-  content: "";
-  background-color: #fff;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  opacity: 0.45;
 }
 
 .btn-wrap {
@@ -110,14 +96,12 @@ img::before {
   border: 2px solid #fff;
   border-radius: 1rem;
 }
+.btn-wrap div:hover {
+  background-color: #fff;
+}
 
 .btn-wrap div + div {
   margin-top: 1rem;
-}
-
-.btn-wrap div:hover {
-  background-color: #fff;
-  color: #42a5e9;
 }
 
 .btn-wrap div a {
@@ -133,4 +117,64 @@ footer {
   color: #fff;
   padding: 1.2rem;
   border-top: 2px solid #fff;
+}
+
+@media screen and (max-width: 360px){
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  svg {
+    width: 25px !important;
+  }
+
+  .btn-wrap {
+    font-size: 1rem;
+  }
+}
+
+
+/* 배경화면별 스타일 */
+.type0 {
+  background-image: url('../img/istockphoto-1128410927-612x612.jpg');
+  background-color: #edf8fe;
+}
+.type0 .img {
+  background-image: url('../img/KakaoTalk_20240415_235222258_07-removebg-preview.png');
+  background-size: 105%;
+}
+.type0 .btn-wrap div:hover {
+  color: #42a5e9;
+}
+
+.type1 {
+  background-image: url('../img/pngtree-cherry-trees-in-boseong-sangok-south-korea-image_13149449.jpg');
+  background-color: #8ca9db;
+}
+.type1 .img {
+  background-image: url('  ../img/KakaoTalk_20240415_235222258_04-removebg-preview.png');
+  background-size: 75%;
+}
+.type1 .btn-wrap div:hover {
+  color: #ff8395;
+}
+
+.type2 {
+  background-image: url('../img/road-marking-greens-summer-trees-1104469-wallhere.com.jpg');
+  background-color: #447ad4;
+}
+.type2 .img {
+  background-image: url('  ../img/KakaoTalk_20240416_085707790_18-removebg-preview.png');
+  background-size: 135%;
+}
+.type2 .btn-wrap div:hover {
+  color: #0abd04;
 }

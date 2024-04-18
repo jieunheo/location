@@ -17,15 +17,15 @@
   <script src="./js/blossom.js"></script>
   <script>
     $(window).load(function () {
-        $('body').sakura();
+      const randomNum = Math.random() * 2;
+      const randomNumFloor = Math.round(randomNum);
+      
+      $('body').addClass('type'+randomNumFloor);
+      $('body').sakura();
     });
     </script>
 </head>
 <body>
-  <script>
-    // location.href = "https://naver.com";
-  </script>
-
   <main>
     <div class="photo-wrap">
       <h1>Wedding Day</h1>

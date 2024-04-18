@@ -791,3 +791,11 @@
   pointer-events: none;
   position: absolute
 }
+
+.type2 .sakura {
+    background: -webkit-linear-gradient(120deg, rgba(158, 255, 139, 0.9), rgba(158, 255, 139, 0.9));
+    background: -o-linear-gradient(120deg, rgba(158, 255, 139, 0.9), rgba(158, 255, 139, 0.9));
+    background: -ms-linear-gradient(120deg, rgba(158, 255, 139, 0.9), rgba(158, 255, 139, 0.9));
+    background: -moz-linear-gradient(120deg, rgba(158, 255, 139, 0.9), rgba(158, 255, 139, 0.9));
+    background: linear-gradient(120deg, rgba(158, 255, 139, 0.9), rgba(158, 255, 139, 0.9));
+}
