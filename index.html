@@ -14,105 +14,6 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/heart_animation.css">
   <link rel="stylesheet" href="./css/blossom.css">
-  <script src="./js/blossom.js"></script>
-  <script>
-    $(window).load(function () {
-      const randomNum = Math.random() * 2;
-      type = Math.round(randomNum);
-
-      // 배경 타입 설정
-      go_type(type);
-
-      // 디데이 처음 실행
-      dayCount();
-
-      // 흩날리는 애니메이션 적용
-      $('body').sakura();
-
-      // 배경음악 설정
-      var bgm = document.getElementById('bgm');
-      $('#btn_bgm_control').on('click', function(e) {
-        e.preventDefault();
-        if ( bgm.paused ) {
-          $(this).find('img').attr('src', $(this).find('img').attr('src').replace(/off\.gif$/, 'on.gif'));
-          bgm.play();
-        } else {
-          $(this).find('img').attr('src', $(this).find('img').attr('src').replace(/on\.gif$/, 'off.gif'));
-          bgm.pause();
-        }
-      });
-    });
-
-    // 디데이 설정
-    var countdownInterval = setInterval(dayCount, 1000);
-    function dayCount() {
-      const today = new Date();
-      const dday = new Date("2024-08-31");
-      let timeGap = dday.getTime() - today.getTime();
-      
-      // 남은 일
-      const remainTime = Math.ceil(timeGap / (1000 * 60 * 60 * 24));
-      $('#main_dday_text').text(remainTime);
-
-      // 적용
-      if(timeGap > 0) {
-        $('#day_count').text(remainTime);
-
-      } else {
-        $('#day_count').text('Day');
-
-        // 남은 시간
-        const starttime = new Date("2024-08-31 13:00:00");
-        timeGap = starttime.getTime() - today.getTime();
-        if(timeGap <= 0) {
-          $('#end').css('display','block');
-          $('.time').css('display','none');
-          clearInterval(countdownInterval);
-          return;
-        }
-        const hours = String(Math.floor((timeGap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2,'0');
-        const minutes = String(Math.floor((timeGap % (1000 * 60 * 60)) / (1000 * 60))).padStart(2,'0');
-        const seconds = String(Math.floor((timeGap % (1000 * 60)) / 1000)).padStart(2,'0');
-        
-        $('#seconds').text(seconds);
-        $('#minutes').text(minutes);
-        $('#hours').text(hours);
-
-        if($('.time').css('display') == 'none') {
-          $('.time').css('display','block');
-        }
-      }
-    }
-
-    function go_type(type) {
-      $('body').removeClass('type0 type1 type2');
-      $('body').addClass('type'+type);
-
-      // 현재 배경 버튼 텍스트 수정
-      let type_name = 'Sky';
-      switch (type) {
-        case '1':
-        case 1: type_name = 'Blossoms'; break;
-        case '2':
-        case 2: type_name = 'Leaf'; break;
-      }
-      $('.types_name').removeClass('active');
-      $('.types_name button').each(function (index, item) {
-          if(index == 0) $(item).text('S');
-          if(index == 1) $(item).text('B');
-          if(index == 2) $(item).text('L');
-      });	
-      $('#name'+type).addClass('active');
-      $('#name'+type+" button").text(type_name);
-
-      // 하트 애니메이션 다시 실행
-      $("#checkbox").prop("checked", false);
-      setTimeout(() => {
-        $("#checkbox").prop("checked", true);
-      }, 100);
-    }
-  </script>
-
   <link rel="stylesheet" href="./css/calender.css">
 </head>
 <body>
@@ -201,5 +102,105 @@
   <footer>
     <p>Copyright (c) <b>HeoJieun</b> All Rights Reserved.</p>
   </footer>
+
+  <script src="./js/blossom.js"></script>
+  <script>
+    $(window).load(function () {
+      const randomNum = Math.random() * 2;
+      type = Math.round(randomNum);
+
+      // 배경 타입 설정
+      go_type(type);
+
+      // 디데이 처음 실행
+      dayCount();
+    });
+
+    // 디데이 설정
+    var countdownInterval = setInterval(dayCount, 1000);
+    function dayCount() {
+      const today = new Date();
+      const dday = new Date("2024-08-31");
+      let timeGap = dday.getTime() - today.getTime();
+      
+      // 남은 일
+      const remainTime = Math.ceil(timeGap / (1000 * 60 * 60 * 24));
+      $('#main_dday_text').text(remainTime);
+
+      // 적용
+      if(timeGap > 0) {
+        $('#day_count').text(remainTime);
+
+      } else {
+        $('#day_count').text('Day');
+
+        // 남은 시간
+        const starttime = new Date("2024-08-31 13:00:00");
+        timeGap = starttime.getTime() - today.getTime();
+        if(timeGap <= 0) {
+          $('#end').css('display','block');
+          $('.time').css('display','none');
+          clearInterval(countdownInterval);
+          return;
+        }
+        const hours = String(Math.floor((timeGap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2,'0');
+        const minutes = String(Math.floor((timeGap % (1000 * 60 * 60)) / (1000 * 60))).padStart(2,'0');
+        const seconds = String(Math.floor((timeGap % (1000 * 60)) / 1000)).padStart(2,'0');
+        
+        $('#seconds').text(seconds);
+        $('#minutes').text(minutes);
+        $('#hours').text(hours);
+
+        if($('.time').css('display') == 'none') {
+          $('.time').css('display','block');
+        }
+      }
+    }
+
+    function go_type(type) {
+      $('body').removeClass('type0 type1 type2');
+      $('body').addClass('type'+type);
+
+      // 현재 배경 버튼 텍스트 수정
+      let type_name = 'Sky';
+      switch (type) {
+        case '1':
+        case 1: type_name = 'Blossoms'; break;
+        case '2':
+        case 2: type_name = 'Leaf'; break;
+      }
+      $('.types_name').removeClass('active');
+      $('.types_name button').each(function (index, item) {
+          if(index == 0) $(item).text('S');
+          if(index == 1) $(item).text('B');
+          if(index == 2) $(item).text('L');
+      });	
+      $('#name'+type).addClass('active');
+      $('#name'+type+" button").text(type_name);
+
+      // 하트 애니메이션 다시 실행
+      $("#checkbox").prop("checked", false);
+      setTimeout(() => {
+        $("#checkbox").prop("checked", true);
+      }, 100);
+    }
+  </script>
+  <script>
+    // 흩날리는 애니메이션 적용
+    $('body').sakura();
+
+    // 배경음악 설정
+    var bgm = document.getElementById('bgm');
+    $('#btn_bgm_control').on('click', function(e) {
+      e.preventDefault();
+      if ( bgm.paused ) {
+        $(this).find('img').attr('src', $(this).find('img').attr('src').replace(/off\.gif$/, 'on.gif'));
+        bgm.play();
+      } else {
+        $(this).find('img').attr('src', $(this).find('img').attr('src').replace(/on\.gif$/, 'off.gif'));
+        bgm.pause();
+      }
+    });
+  </script>
 </body>
 </html>
