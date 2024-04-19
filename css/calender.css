@@ -1,0 +1,160 @@
+/* ê³ ì–‘ì²´ */
+@font-face { font-family: 'Goyang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff'); font-weight: normal; font-style: normal; }
+.fgy { font-family: 'Goyang', sans-serif !important; letter-spacing: 1px; }
+/* ëŒ€í•œì²´ */
+@font-face { font-family: 'Daehan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Daehan.woff') format('woff'); font-weight: normal; font-style: normal; }
+.fdh { font-family: 'Daehan', sans-serif !important; }
+/* ì¡°ì„ ì¼ë³´ëª…ì¡°ì²´ */
+@font-face { font-family: 'Chosunilbo_myungjo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff'); font-weight: normal; font-style: normal; }
+.fcim { font-family: 'Chosunilbo_myungjo', sans-serif !important; }
+/* ì„œìš¸í•œê°•ì²´ */
+@font-face { font-family: 'SeoulHangangM'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff'); font-weight: normal; font-style: normal; }
+.fsh { font-family: 'SeoulHangangM', sans-serif !important; }
+/* ë‚˜ëˆ”ë°”ë¥¸ê³ ë”• */
+@font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype'); } @font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype') } @font-face { font-family: 'NanumBarunGothic'; font-style: normal; font-weight: 300; src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot'); src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype'); } .nanumbarungothic * { font-family: 'NanumBarunGothic', sans-serif; }
+.fnbg { font-family: 'NanumBarunGothic', sans-serif !important; }
+/* ê²½ê¸°ì²œë…„ë°”íƒ•ì²´ */
+@font-face { font-family: 'GyeonggiBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
+.fgb { font-family: 'GyeonggiBatang', serif !important; }
+/* ì´ë¡­ê²Œë°”íƒ•ì²´ */
+@font-face { font-family: 'Iropke Batang'; font-style: normal; font-weight: 400; src: url(//cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.eot); src: url(//cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.eot?#iefix) format('embedded-opentype'), url(//cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.woff) format('woff'), url(//cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.ttf) format('truetype'); }
+.fib { font-family: 'Iropke Batang', serif !important; }
+
+.wrapper {
+	/*font-size: 14px !important;*/
+	font-family: 'Nanum Gothic', sans-serif !important;
+	letter-spacing: -1.8px;
+}
+
+b { font-weight: bold; }
+
+.fng { font-family: 'Nanum Gothic', sans-serif !important; }
+.fnm { font-family: 'Nanum Myeongjo', sans-serif !important; }
+
+
+.main_dday_area {
+	width: 100%;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+	padding: 50px 0;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main_dday_wrapper {
+	width: 100%;
+	text-align: center;
+	padding-top: 30px;
+	color: #585858;
+}
+
+.main_dday_wrapper #main_dday_text {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.main_dday_area .main_dday_time_wrapper {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.main_dday_area .main_dday_time_wrapper > div {
+	padding: 5px 0;
+	font-size: 0.8em;
+}
+
+.main_dday_area .main_dday_time_wrapper > div.main_dday_date {
+	font-size: 1.5em;
+	color: #474747;
+}
+
+.main_dday_area .main_dday_time_wrapper > div.main_dday_time {
+	color: #2a2a2a;
+	letter-spacing: 1px;
+}
+
+.main_dday_area .main_dday_name {
+	text-align: center;
+	width: 180px;
+	font-size: 1.4em;
+	margin: 0 auto 40px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #c8c8c8;
+}
+
+.main_dday_area .main_dday_calendar {
+	margin: 0 40px; 
+	padding: 30px 0;
+	/*border-top: 1px solid #e2e2e2;*/
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.main_dday_area .main_dday_calendar table {
+	width: 100%;
+}	
+
+.main_dday_area .main_dday_calendar table th {
+	text-align: center;
+	padding: 8px 0;
+	color: #808080;
+	border-top: 1px solid #E2E2E2;
+	border-bottom: 1px solid #E2E2E2;
+	font-size: 0.9em;
+}
+
+.main_dday_area .main_dday_calendar table td {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 0.9em;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	color: #808080;
+}
+
+.main_dday_area .main_dday_calendar table tr:nth-child(2) td {
+	padding-top: 20px;
+}
+
+.main_dday_area .main_dday_calendar table td span.dday {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px;
+	background-color: #ed9d9d;
+	color: #fff;
+	border-radius: 50%;
+}
+
+.type0 .main_dday_area .main_dday_calendar table td span.dday {
+  background-color: var(--type0);
+}
+.type1 .main_dday_area .main_dday_calendar table td span.dday {
+  background-color: var(--type1);
+}
+.type2 .main_dday_area .main_dday_calendar table td span.dday {
+  background-color: var(--type2);
+}
+
+@media screen and (max-width: 400px){
+  .main_dday_wrapper {
+    padding-top: 4vw;
+    font-size: 0.8rem;
+  }
+  .main_dday_area {
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+  .main_dday_area .main_dday_time_wrapper {
+    margin-bottom: 5vw;
+  }
+  .main_dday_area .main_dday_calendar {
+    padding: 5vw 0;
+  }
+  .main_dday_area .main_dday_calendar table td span.dday {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+}

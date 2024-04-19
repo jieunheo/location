@@ -15,34 +15,17 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/heart_animation.css">
 
+  <link rel="stylesheet" href="./css/calender.css">
+
   <link rel="stylesheet" href="./css/blossom.css">
   <script src="./js/blossom.js"></script>
   <script>
     $(window).load(function () {
-      // 배경 타입 선택 여부 확인
-      const searchParams = new URLSearchParams(location.search);
-      let type = '';
-      for (const param of searchParams) {
-        type = param[1];
-      }
+      const randomNum = Math.random() * 2;
+      type = Math.round(randomNum);
 
-      if(!type) { // 배경 타입 선택 안한 경우 랜덤
-        const randomNum = Math.random() * 2;
-        type = Math.round(randomNum);
-      }
       // 배경 타입 설정
-      $('body').addClass('type'+type);
-
-      // 현재 배경 버튼 텍스트 수정
-      $('#name'+type).addClass('active');
-      let type_name = 'Sky';
-      switch (type) {
-        case '1':
-        case 1: type_name = 'Blossoms'; break;
-        case '2':
-        case 2: type_name = 'Leaf'; break;
-      }
-      $('#name'+type+" button").html(type_name);
+      go_type(type);
 
       // 흩날리는 애니메이션 적용
       $('body').sakura();
@@ -73,6 +56,7 @@
       
       // 남은 일
       const remainTime = Math.ceil(timeGap / (1000 * 60 * 60 * 24));
+      $('#main_dday_text').text(remainTime);
 
       // 적용
       if(timeGap > 0) {
@@ -105,7 +89,25 @@
     }
 
     function go_type(type) {
-      window.location.replace("?type=" + type);
+      $('body').removeClass('type0 type1 type2');
+      $('body').addClass('type'+type);
+
+      // 현재 배경 버튼 텍스트 수정
+      let type_name = 'Sky';
+      switch (type) {
+        case '1':
+        case 1: type_name = 'Blossoms'; break;
+        case '2':
+        case 2: type_name = 'Leaf'; break;
+      }
+      $('.types_name').removeClass('active');
+      $('.types_name button').each(function (index, item) {
+          if(index == 0) $(item).text('S');
+          if(index == 1) $(item).text('B');
+          if(index == 2) $(item).text('L');
+      });	
+      $('#name'+type).addClass('active');
+      $('#name'+type+" button").text(type_name);
     }
   </script>
 </head>
@@ -121,9 +123,9 @@
           </audio>
         </div>
         <div class="line">|</div>
-        <div id="name0" data-type="S"><button onclick="go_type(0)">S</button></div>
-        <div id="name1" data-type="B"><button onclick="go_type(1)">B</button></div>
-        <div id="name2" data-type="L"><button onclick="go_type(2)">L</button></div>
+        <div id="name0" class="types_name" data-type="S"><button onclick="go_type(0)">S</button></div>
+        <div id="name1" class="types_name" data-type="B"><button onclick="go_type(1)">B</button></div>
+        <div id="name2" class="types_name" data-type="L"><button onclick="go_type(2)">L</button></div>
       </div>
     </div>
 
@@ -158,6 +160,37 @@
       </div>
       <div>
         <a href="https://m.map.kakao.com/actions/detailMapView?id=476733690&refService=place" target="_blank">예식장 위치</a>
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="info_date">08월 31일</div>
+      <div class="info_time">토요일 오후 1:00</div>
+      <div class="info_place">전주 아름다운컨벤션 2층 피에스타홀</div>
+    </div>
+
+    <div class="calender">
+      <div class="main_dday_area fib">
+        <div class="main_dday_time_wrapper">
+          <div class="main_dday_date">
+            08월
+          </div>
+        </div>
+        <div class="main_dday_calendar">
+          <table>
+          <tbody>
+            <tr><th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>2</td><td>3</td></tr>
+            <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+            <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr>
+            <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+            <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td><span class="dday">31</span></td></tr>
+          </tbody>
+          </table>
+        </div>
+        <div class="main_dday_wrapper">
+          * 예식일이 <span id="main_dday_text">9</span> 일 남았습니다.
+        </div>
       </div>
     </div>
   </main>
