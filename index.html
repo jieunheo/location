@@ -108,6 +108,12 @@
       });	
       $('#name'+type).addClass('active');
       $('#name'+type+" button").text(type_name);
+
+      // 하트 애니메이션 다시 실행
+      $("#checkbox").prop("checked", false);
+      setTimeout(() => {
+        $("#checkbox").prop("checked", true);
+      }, 100);
     }
   </script>
 </head>
