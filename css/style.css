@@ -118,6 +118,35 @@ h3 {
   background-size: contain;
 }
 
+.img p {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  color: #fff;
+}
+
+.img .day {
+  margin-top: 1.8rem;
+  font-size: 3rem;
+}
+
+.img #day_count {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  color: #fff;
+}
+
+.img .time {
+  margin-top: 1vw;
+  display: none;
+  font-family: 'Pretendard Variable', Pretendard;
+}
+
+.img #end {
+  margin-top: 1vw;
+  display: none;
+  font-family: 'Pretendard Variable', Pretendard;
+}
+
 .btn-wrap {
   width: 100%;
   max-width: 400px;
@@ -187,6 +216,21 @@ footer {
 
   .img {
     margin-top: 3vw;
+  }
+
+  .img .day {
+    margin-top: 5vw;
+    font-size: 2rem;
+  }
+
+  .img .time {
+    margin-top: 1vw;
+    font-size: 0.8rem;
+  }
+
+  .img #end {
+    margin-top: 1vw;
+    font-size: 0.8rem;
   }
 
   .types_wrap button {

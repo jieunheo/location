@@ -28,15 +28,15 @@ svg{
   
 }
 
-span{
+h3 span{
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   background-color: transparent;
   border-radius: 50%;
   /*절대적 포지션: center*/
   position: absolute;
-  top: 50%;
+  top: 60vh;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   /*각 방향의 쉐도우 설정*/
@@ -100,7 +100,7 @@ label{
       opacity: 1;
   }
   100%{
-      transform: translate(-50%, -50%) scale(1.1);
+      transform: translate(-50%, -50%) scale(1.2);
       opacity: 0;
   }
 }

@@ -17,18 +17,21 @@
   <script src="./js/blossom.js"></script>
   <script>
     $(window).load(function () {
+      // 배경 타입 선택 여부 확인
       const searchParams = new URLSearchParams(location.search);
       let type = '';
       for (const param of searchParams) {
         type = param[1];
       }
 
-      if(!type) {
+      if(!type) { // 배경 타입 선택 안한 경우 랜덤
         const randomNum = Math.random() * 2;
         type = Math.round(randomNum);
       }
+      // 배경 타입 설정
       $('body').addClass('type'+type);
 
+      // 현재 배경 버튼 텍스트 수정
       $('#name'+type).addClass('active');
       let type_name = 'Sky';
       switch (type) {
@@ -39,9 +42,10 @@
       }
       $('#name'+type+" button").html(type_name);
 
+      // 흩날리는 애니메이션 적용
       $('body').sakura();
 
-    
+      // 배경음악 설정
       var bgm = document.getElementById('bgm');
       $('#btn_bgm_control').on('click', function(e) {
         e.preventDefault();
@@ -53,8 +57,50 @@
           bgm.pause();
         }
       });
+
+      // 디데이 처음 실행
+      dayCount();
     });
 
+    // 디데이 설정
+    var countdownInterval = setInterval(dayCount, 1000);
+    function dayCount() {
+      const today = new Date();
+      const dday = new Date("2024-4-19");
+      let timeGap = dday.getTime() - today.getTime();
+      
+      // 남은 일
+      const remainTime = Math.ceil(timeGap / (1000 * 60 * 60 * 24));
+
+      // 적용
+      if(timeGap > 0) {
+        $('#day_count').text(remainTime);
+
+      } else {
+        $('#day_count').text('Day');
+
+        // 남은 시간
+        const starttime = new Date("2024-4-19 11:21:00");
+        timeGap = starttime.getTime() - today.getTime();
+        if(timeGap <= 0) {
+          $('#end').css('display','block');
+          $('.time').css('display','none');
+          clearInterval(countdownInterval);
+          return;
+        }
+        const hours = String(Math.floor((timeGap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2,'0');
+        const minutes = String(Math.floor((timeGap % (1000 * 60 * 60)) / (1000 * 60))).padStart(2,'0');
+        const seconds = String(Math.floor((timeGap % (1000 * 60)) / 1000)).padStart(2,'0');
+        
+        $('#seconds').text(seconds);
+        $('#minutes').text(minutes);
+        $('#hours').text(hours);
+
+        if($('.time').css('display') == 'none') {
+          $('.time').css('display','block');
+        }
+      }
+    }
 
     function go_type(type) {
       window.location.replace("?type=" + type);
@@ -82,7 +128,17 @@
     <div class="photo-wrap">
       <h1>Wedding Day</h1>
       <h2>2024.08.31</h2>
-      <div class="img"></div>
+      <div class="img">
+        <p class="day">D-<span id="day_count">Day</span></p>
+        <p class="time">
+          <span id="hours">00</span> :
+          <span id="minutes">00</span> :
+          <span id="seconds">00</span>
+        </p>
+        <p id="end">
+          축하해주셔서 감사합니다.
+        </p>
+      </div>
       <h3>
         조하진
         <label for="checkbox">
