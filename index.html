@@ -66,7 +66,7 @@
     var countdownInterval = setInterval(dayCount, 1000);
     function dayCount() {
       const today = new Date();
-      const dday = new Date("2024-4-19");
+      const dday = new Date("2024-08-31");
       let timeGap = dday.getTime() - today.getTime();
       
       // 남은 일
@@ -80,7 +80,7 @@
         $('#day_count').text('Day');
 
         // 남은 시간
-        const starttime = new Date("2024-4-19 11:21:00");
+        const starttime = new Date("2024-08-31 13:00:00");
         timeGap = starttime.getTime() - today.getTime();
         if(timeGap <= 0) {
           $('#end').css('display','block');
