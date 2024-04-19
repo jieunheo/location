@@ -93,15 +93,15 @@
 	border-radius: 50%;
 }
 
-.type0 .main_dday_area .main_dday_calendar table td span.dday {
-  background-color: var(--type0);
-}
-.type1 .main_dday_area .main_dday_calendar table td span.dday {
-  background-color: var(--type1);
-}
-.type2 .main_dday_area .main_dday_calendar table td span.dday {
-  background-color: var(--type2);
-}
+/* 배경화면별 스타일 */
+.type0 .main_dday_area .main_dday_calendar table td span.dday {background-color: var(--type0);}
+.type0 .main_dday_wrapper #main_dday_text {color: var(--type0);}
+
+.type1 .main_dday_area .main_dday_calendar table td span.dday {background-color: var(--type1);}
+.type1 .main_dday_wrapper #main_dday_text {color: var(--type1);}
+
+.type2 .main_dday_area .main_dday_calendar table td span.dday {background-color: var(--type2);}
+.type2 .main_dday_wrapper #main_dday_text {color: var(--type2);}
 
 @media screen and (max-width: 400px){
   .main_dday_wrapper {
