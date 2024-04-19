@@ -8,8 +8,8 @@
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   
-  <link rel="preconnect" href="//fonts.googleapis.com">
-  <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+  <link href="//fonts.googleapis.com">
+  <link href="//fonts.gstatic.com" crossorigin>
   <link href="//fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
   <link href="//fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gowun+Dodum&display=swap" rel="stylesheet">
   
@@ -26,6 +26,9 @@
       // 배경 타입 설정
       go_type(type);
 
+      // 디데이 처음 실행
+      dayCount();
+
       // 흩날리는 애니메이션 적용
       $('body').sakura();
 
@@ -41,9 +44,6 @@
           bgm.pause();
         }
       });
-
-      // 디데이 처음 실행
-      dayCount();
     });
 
     // 디데이 설정
@@ -169,7 +169,7 @@
     </div>
 
     <div class="info">
-      <div class="info_date">08월 31일</div>
+      <div class="info_date">8월 31일</div>
       <div class="info_time">토요일 오후 1:00</div>
       <div class="info_place">전주 아름다운컨벤션 2층 피에스타홀</div>
     </div>
@@ -178,7 +178,7 @@
       <div class="main_dday_area fib">
         <div class="main_dday_time_wrapper">
           <div class="main_dday_date">
-            08월
+            8월
           </div>
         </div>
         <div class="main_dday_calendar">
