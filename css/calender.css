@@ -37,7 +37,7 @@ b { font-weight: bold; }
   max-width: 550px;
   margin-left: auto;
   margin-right: auto;
-	padding: 50px 0;
+	padding: 40px 0;
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -55,7 +55,7 @@ b { font-weight: bold; }
 
 .main_dday_area .main_dday_time_wrapper {
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .main_dday_area .main_dday_time_wrapper > div {
@@ -84,7 +84,7 @@ b { font-weight: bold; }
 
 .main_dday_area .main_dday_calendar {
 	margin: 0 40px; 
-	padding: 30px 0;
+	padding: 20px 0;
 	/*border-top: 1px solid #e2e2e2;*/
 	border-bottom: 1px solid #e2e2e2;
 }
@@ -156,5 +156,8 @@ b { font-weight: bold; }
     width: 20px;
     height: 20px;
     line-height: 20px;
+  }
+  .main_dday_area .main_dday_time_wrapper > div.main_dday_date {
+    font-size: 1.3rem;
   }
 }

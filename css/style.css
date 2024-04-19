@@ -223,6 +223,23 @@ footer {
 }
 
 @media screen and (max-width: 400px){
+  main .types_wrap {
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+  }
+  main .types_wrap .flex {
+    gap: 0.5rem;
+  }
+
+  main .types_wrap button {
+    font-size: 0.8rem;
+  }
+
+  .music_btn {
+    width: 18px;
+    height: 18px;
+  }
+
   h1 {
     font-size: 2rem;
   }
