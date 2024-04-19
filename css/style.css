@@ -33,7 +33,7 @@ body::after{
     z-index:-1;
     
     /* load images */
-    content:url('./img/sky.png') url('./img/blossoms.png') url('./img/leaf.png') url('./img/sky_bg.jpg') url('./img/blossoms_bg.jpg') url('./img/leaf_bg.jpg'); /* 필요한 이미지 소스들 다운 */
+    content:url('../img/sky.png') url('../img/blossoms.png') url('../img/leaf.png') url('../img/sky_bg.jpg') url('../img/blossoms_bg.jpg') url('../img/leaf_bg.jpg'); /* 필요한 이미지 소스들 다운 */
 }
 
 .active button {
