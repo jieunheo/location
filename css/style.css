@@ -22,6 +22,9 @@ body {
 .active button {
   font-weight: 900;
 }
+.line {
+  font-weight: 500;
+}
 
 main {
   width: 80%;
@@ -32,9 +35,22 @@ main {
   text-align: center;
 }
 
+
+.music_btn {
+  display: inline-block;
+  align-items: baseline;
+  width: 24px;
+  height: 24px;
+}
+.music_btn img {
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+}
+
 main .types_wrap {
   display: inline-block;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 0.5rem 1.2rem;
   border-radius: 30px;
 }
@@ -43,6 +59,7 @@ main .types_wrap .flex {
   display: flex;
   gap: 0.8rem;
   justify-content: center;
+  align-items: center;
 }
 
 main .types_wrap button {
@@ -207,6 +224,9 @@ footer {
 .type0 .active button {
   color: #42a5e9;
 }
+.type0 .line {
+  color: #42a5e9;
+}
 
 .type1 {
   background-image: url('../img/blossoms_bg.jpg');
@@ -222,6 +242,9 @@ footer {
 .type1 .active button {
   color: #ff8395;
 }
+.type1 .line {
+  color: #ff8395;
+}
 
 .type2 {
   background-image: url('../img/leaf_bg.jpg');
@@ -235,5 +258,8 @@ footer {
   color: #0abd04;
 }
 .type2 .active button {
+  color: #0abd04;
+}
+.type2 .line {
   color: #0abd04;
 }

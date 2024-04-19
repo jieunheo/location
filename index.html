@@ -40,7 +40,21 @@
       $('#name'+type+" button").html(type_name);
 
       $('body').sakura();
+
+    
+      var bgm = document.getElementById('bgm');
+      $('#btn_bgm_control').on('click', function(e) {
+        e.preventDefault();
+        if ( bgm.paused ) {
+          $(this).find('img').attr('src', $(this).find('img').attr('src').replace(/off\.gif$/, 'on.gif'));
+          bgm.play();
+        } else {
+          $(this).find('img').attr('src', $(this).find('img').attr('src').replace(/on\.gif$/, 'off.gif'));
+          bgm.pause();
+        }
+      });
     });
+
 
     function go_type(type) {
       window.location.replace("?type=" + type);
@@ -52,6 +66,13 @@
   <main>
     <div class="types_wrap">
       <div class="flex">
+        <div class="music">
+          <a class="music_btn" href="#" id="btn_bgm_control"><img src="./img/sound_on.gif"></a>
+          <audio id="bgm" loop="loop" autoplay="autoplay">
+            <source src="./music/스윗소로우-좋겠다(feat. 오지은, 정준일).mp3" type="audio/mp3">
+          </audio>
+        </div>
+        <div class="line">|</div>
         <div id="name0" data-type="S"><button onclick="go_type(0)">S</button></div>
         <div id="name1" data-type="B"><button onclick="go_type(1)">B</button></div>
         <div id="name2" data-type="L"><button onclick="go_type(2)">L</button></div>
