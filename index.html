@@ -118,6 +118,22 @@
 
       // 디데이 처음 실행
       dayCount();
+
+      // 흩날리는 애니메이션 적용
+      $('body').sakura();
+    });
+
+    // 배경음악 설정
+    var bgm = document.getElementById('bgm');
+    $('#btn_bgm_control').on('click', function(e) {
+      e.preventDefault();
+      if ( bgm.paused ) {
+        $(this).find('img').attr('src', $(this).find('img').attr('src').replace(/off\.gif$/, 'on.gif'));
+        bgm.play();
+      } else {
+        $(this).find('img').attr('src', $(this).find('img').attr('src').replace(/on\.gif$/, 'off.gif'));
+        bgm.pause();
+      }
     });
 
     // 디데이 설정
@@ -191,23 +207,6 @@
         $("#checkbox").prop("checked", true);
       }, 100);
     }
-  </script>
-  <script>
-    // 흩날리는 애니메이션 적용
-    $('body').sakura();
-
-    // 배경음악 설정
-    var bgm = document.getElementById('bgm');
-    $('#btn_bgm_control').on('click', function(e) {
-      e.preventDefault();
-      if ( bgm.paused ) {
-        $(this).find('img').attr('src', $(this).find('img').attr('src').replace(/off\.gif$/, 'on.gif'));
-        bgm.play();
-      } else {
-        $(this).find('img').attr('src', $(this).find('img').attr('src').replace(/on\.gif$/, 'off.gif'));
-        bgm.pause();
-      }
-    });
   </script>
 </body>
 </html>

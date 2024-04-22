@@ -21,6 +21,10 @@ body {
   --type1: #ff8395;
   --type2: #06c300;
 }
+body::after {
+  /* 필요한 이미지 소스들 다운 */
+  content:url(../img/blossoms.png) url(../img/blossoms_bg.jpg) url(../img/leaf.png) url(../img/leaf_bg.jpg) url(../img/sky.png) url(../img/sky_bg.jpg);
+}
 
 .active button {
   font-weight: 900;
