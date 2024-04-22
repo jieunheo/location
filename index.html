@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="./css/blossom.css">
   <link rel="stylesheet" href="./css/calender.css">
 </head>
-<body>
+<body id="type">
 
   <main>
     <div class="types_wrap">
@@ -158,6 +158,9 @@
     }
 
     function go_type(type) {
+      let old_class = document.getElementById("type").classList.item(0);
+      if(old_class == "type"+type) return;
+
       $('body').removeClass('type0 type1 type2');
       $('body').addClass('type'+type);
 
