@@ -1,7 +1,7 @@
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,form,fieldset,p,button,option{margin:0;padding:0}
-body,h1,h2,h3,h4,th,td,input,select.textarea{font-family:'Pretendard Variable', Pretendard,"돋움",dotum;font-weight:normal}
-html, body, p, span, ul, li, button, input{font-family: 'Pretendard Variable', Pretendard,'NanumGothic', 'MalgunGothic', '맑은고딕', Dotum, 돋움;}
+body,h1,h2,h3,h4,th,td,input,select.textarea{font-family:"Gowun Dodum", 'NanumGothic', 'MalgunGothic', '맑은고딕', Dotum, 돋움;font-weight:normal}
+html, body, p, span, ul, li, button, input{font-family: "Gowun Dodum", 'NanumGothic', 'MalgunGothic', '맑은고딕', Dotum, 돋움;}
 div, a {box-sizing: border-box;}
 a {
   color: inherit;
@@ -21,15 +21,6 @@ body {
   --type1: #ff8395;
   --type2: #06c300;
 }
-/* body::after {
-  position:absolute; 
-  width:0; 
-  height:0; 
-  overflow:hidden; 
-  z-index:-1;
-
-  content:url(../img/blossoms.webp) url(../img/blossoms_bg.webp) url(../img/leaf.webp) url(../img/leaf_bg.webp) url(../img/sky.webp) url(../img/sky_bg.webp);
-} */
 
 .active button {
   font-weight: 900;
@@ -150,13 +141,13 @@ h3 {
 .img .time {
   margin-top: 1vw;
   display: none;
-  font-family: 'Pretendard Variable', Pretendard;
+  font-family: "Gowun Dodum", 'NanumGothic', 'MalgunGothic', '맑은고딕', Dotum, 돋움;
 }
 
 .img #end {
   margin-top: 1vw;
   display: none;
-  font-family: 'Pretendard Variable', Pretendard;
+  font-family: "Gowun Dodum", 'NanumGothic', 'MalgunGothic', '맑은고딕', Dotum, 돋움;
 }
 
 .btn-wrap {
@@ -168,7 +159,7 @@ h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 
-  font-family: "Gowun Dodum", sans-serif;
+  font-family: "Gowun Dodum", "Gowun Dodum", sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 1.5rem;
@@ -194,7 +185,7 @@ h3 {
 
 
 .info {
-  font-family: "Gowun Dodum", sans-serif;
+  font-family: "Gowun Dodum", "Gowun Dodum", sans-serif;
   max-width: 550px;
   width: 100%;
   margin-left: auto;
