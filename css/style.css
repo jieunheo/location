@@ -21,17 +21,15 @@ body {
   --type1: #ff8395;
   --type2: #06c300;
 }
-body::after {
-  /* 소스만 다운받고 화면은 나태내지 않는다. (숨김 처리) */
+/* body::after {
   position:absolute; 
   width:0; 
   height:0; 
   overflow:hidden; 
   z-index:-1;
 
-  /* 필요한 이미지 소스들 다운 */
   content:url(../img/blossoms.webp) url(../img/blossoms_bg.webp) url(../img/leaf.webp) url(../img/leaf_bg.webp) url(../img/sky.webp) url(../img/sky_bg.webp);
-}
+} */
 
 .active button {
   font-weight: 900;
