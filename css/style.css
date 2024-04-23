@@ -30,7 +30,7 @@ body::after {
   z-index:-1;
 
   /* 필요한 이미지 소스들 다운 */
-  content:url(../img/blossoms.png) url(../img/blossoms_bg.jpg) url(../img/leaf.png) url(../img/leaf_bg.jpg) url(../img/sky.png) url(../img/sky_bg.jpg);
+  content:url(../img/blossoms.webp) url(../img/blossoms_bg.webp) url(../img/leaf.webp) url(../img/leaf_bg.webp) url(../img/sky.webp) url(../img/sky_bg.webp);
 }
 
 .active button {
@@ -324,11 +324,11 @@ footer {
 
 /* 배경화면별 스타일 */
 .type0 {
-  background-image: url('../img/sky_bg.jpg');
+  background-image: url('../img/sky_bg.webp');
   background-color: #edf8fe;
 }
 .type0 .img {
-  background-image: url('../img/sky.png');
+  background-image: url('../img/sky.webp');
   background-size: 105%;
 }
 .type0 .btn-wrap div:hover {
@@ -342,11 +342,11 @@ footer {
 }
 
 .type1 {
-  background-image: url('../img/blossoms_bg.jpg');
+  background-image: url('../img/blossoms_bg.webp');
   background-color: #8ca9db;
 }
 .type1 .img {
-  background-image: url('../img/blossoms.png');
+  background-image: url('../img/blossoms.webp');
   background-size: 75%;
 }
 .type1 .btn-wrap div:hover {
@@ -360,11 +360,11 @@ footer {
 }
 
 .type2 {
-  background-image: url('../img/leaf_bg.jpg');
+  background-image: url('../img/leaf_bg.webp');
   background-color: #447ad4;
 }
 .type2 .img {
-  background-image: url('../img/leaf.png');
+  background-image: url('../img/leaf.webp');
   background-size: 135%;
 }
 .type2 .btn-wrap div:hover {
