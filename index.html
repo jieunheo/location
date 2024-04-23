@@ -11,15 +11,14 @@
   <link rel="icon" href="./img/favicon.png">
   
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/jquery.min.js"></script>
-
   <link rel="stylesheet" href="./css/heart_animation.css">
   <link rel="stylesheet" href="./css/blossom.css">
   <link rel="stylesheet" href="./css/calender.css">
 
+  <script defer src="./js/jquery.min.js"></script>
   <script defer src="./js/blossom.js"></script>
   <script>
-    $(window).load(function () {
+    window.onload = function () {
       const randomNum = Math.random() * 2;
       type = Math.round(randomNum);
 
@@ -31,7 +30,7 @@
 
       // 흩날리는 애니메이션 적용
       $('body').sakura();
-    });
+    }
 
     // 배경음악 설정
     var bgm = document.getElementById('bgm');
@@ -123,7 +122,6 @@
   <link rel="stylesheet" href="./css/pretendard.css">
 </head>
 <body id="type">
-
   <main>
     <div class="types_wrap">
       <div class="flex">
