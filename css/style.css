@@ -1,3 +1,6 @@
+:root {
+  color-scheme: light only;
+}
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,form,fieldset,p,button,option{margin:0;padding:0}
 body,h1,h2,h3,h4,th,td,input,select.textarea{font-family:"Gowun Dodum", 'NanumGothic', 'MalgunGothic', '맑은고딕', Dotum, 돋움;font-weight:normal}
@@ -371,59 +374,3 @@ footer {
   fill: #ff0000;
 }
 
-
-@media (prefers-color-scheme: dark) {
-  /* 다크 모드에 적용할 스타일 정의 */
-  main .types_wrap {
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  .btn-wrap div {
-    color: #fff;
-    border: 2px solid #fff;
-  }
-  .info {
-    background-color: rgba(255,255,255,0.6);
-  }
-
-  .type0 {
-    background-color: #edf8fe;
-  }
-  .type0 .btn-wrap div:hover {
-    color: var(--type0);
-  }
-  .type0 .active button {
-    color: var(--type0);
-  }
-  .type0 .line {
-    color: var(--type0);
-  }
-
-  .type1 {
-    background-color: #8ca9db;
-  }
-  .type1 .img {
-    background-size: 75%;
-  }
-  .type1 .btn-wrap div:hover {
-    color: var(--type1);
-  }
-  .type1 .active button {
-    color: var(--type1);
-  }
-  .type1 .line {
-    color: var(--type1);
-  }
-
-  .type2 {
-    background-color: #447ad4;
-  }
-  .type2 .btn-wrap div:hover {
-    color: var(--type2);
-  }
-  .type2 .active button {
-    color: var(--type2);
-  }
-  .type2 .line {
-    color: var(--type2);
-  }
-}
