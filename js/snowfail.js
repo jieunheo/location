@@ -33,13 +33,9 @@ function(t) {
           this.stepSize = h(1, 10) / 100,
           i.collection && (this.target = m[h(0, m.length - 1)]);
           var r = null;
-          i.image ? (r = document.createElement("img"),
-          r.src = i.image) : (r = document.createElement("div"),
-          t(r).css({
-              background: i.flakeColor
-          })),
+          r = document.createElement("div"),
           t(r).attr({
-              "class": "snowfall-flakes"
+              "class": "snowfall-flakes sakura"
           }).css({
               width: this.size,
               height: this.size,

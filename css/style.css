@@ -17,9 +17,6 @@ button {
 body {
   height: 90vh;
   width: 100vw;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   --type0: #42a5e9;
   --type1: #ff8395;
@@ -34,10 +31,9 @@ body {
 }
 
 main {
-  width: 80%;
+  /* width: 80%; */
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -80,8 +76,15 @@ header .types_wrap button {
   font-size: 1rem;
 }
 
+.background {
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 main .photo-wrap {
-  width: 100%;
+  width: 80%;
   max-width: 400px;
   min-width: 160px;
   margin-top: 5rem;
@@ -162,7 +165,7 @@ h3 {
 }
 
 .btn-wrap {
-  width: 100%;
+  width: 80%;
   max-width: 400px;
   min-width: 160px;
   margin-left: auto;
@@ -202,6 +205,7 @@ h3 {
 }
 
 .intro {
+  width: 80%;
   margin-top: 1rem;
   padding: 4rem 2rem;
   background-color: #fff;
@@ -212,6 +216,7 @@ h3 {
 }
 
 .info {
+  width: 80%;
   font-family: "Gowun Dodum", "Gowun Dodum", sans-serif;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -232,6 +237,10 @@ h3 {
   margin-top: 1rem;
   font-weight: 500;
   font-size: 1.1rem;
+}
+
+.calender {
+  width: 80%;
 }
 
 
@@ -354,8 +363,10 @@ footer {
 
 /* 배경화면별 스타일 */
 .type0 {
-  background-image: url('../img/sky_bg.webp');
   background-color: #edf8fe;
+}
+.type0 .background {
+  background-image: url('../img/sky_bg.webp');
 }
 .type0 .img {
   background-image: url('../img/sky.webp');
@@ -375,8 +386,10 @@ footer {
 }
 
 .type1 {
+  background-color: #8aabdd;
+}
+.type1 .background {
   background-image: url('../img/blossoms_bg.webp');
-  background-color: #8ca9db;
 }
 .type1 .img {
   background-image: url('../img/blossoms.webp');
@@ -396,8 +409,10 @@ footer {
 }
 
 .type2 {
-  background-image: url('../img/leaf_bg.webp');
   background-color: #447ad4;
+}
+.type2 .background {
+  background-image: url('../img/leaf_bg.webp');
 }
 .type2 .img {
   background-image: url('../img/leaf.webp');
