@@ -1,4 +1,4 @@
-/* @-webkit-keyframes fall {
+@-webkit-keyframes fall {
   0% {
       opacity: 0.9;
       top: 0
@@ -51,9 +51,9 @@
       opacity: 0.2;
       top: 100%
   }
-} */
+}
 
-/* @-webkit-keyframes blow-soft-left {
+@-webkit-keyframes blow-soft-left {
   0% {
       margin-left: 0
   }
@@ -231,9 +231,9 @@
   100% {
       margin-left: 100%
   }
-} */
+}
 
-/* @-webkit-keyframes sway-0 {
+@-webkit-keyframes sway-0 {
   0% {
       -webkit-transform: rotate(-5deg)
   }
@@ -771,7 +771,7 @@
   100% {
       transform: rotate(82deg)
   }
-} */
+}
 
 .sakura {
   background: -webkit-linear-gradient(120deg, rgba(255, 183, 197, 0.9), rgba(255, 197, 208, 0.9));
@@ -789,7 +789,9 @@
   -ms-pointer-events: none;
   -o-pointer-events: none;
   pointer-events: none;
-  position: absolute
+  position: absolute;
+
+  animation: sway-1 1s infinite linear;
 }
 
 .type2 .sakura {
