@@ -2,7 +2,7 @@
   color-scheme: light only;
 }
 
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,form,fieldset,p,button,option{margin:0;padding:0}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,form,fieldset,p,button,option{box-sizing: border-box;margin:0;padding:0}
 body,h1,h2,h3,h4,th,td,input,select.textarea{font-family:"Gowun Dodum", 'NanumGothic', 'MalgunGothic', '맑은고딕', Dotum, 돋움;font-weight:normal}
 html, body, p, span, ul, li, button, input{font-family: "Gowun Dodum", 'NanumGothic', 'MalgunGothic', '맑은고딕', Dotum, 돋움;}
 div, a {box-sizing: border-box;}
@@ -16,7 +16,7 @@ button {
 }
 body {
   height: 90vh;
-  width: 100vw;
+  /* width: 100vw; */
 
   --type0: #42a5e9;
   --type1: #ff8395;
@@ -31,10 +31,7 @@ body {
 }
 
 main {
-  /* width: 80%; */
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2rem;
+  width: 100%;
   text-align: center;
 }
 
@@ -77,10 +74,11 @@ header .types_wrap button {
 }
 
 .background {
-  width: 100vw;
+  overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
 }
 
 main .photo-wrap {
@@ -241,12 +239,6 @@ h3 {
 
 .calender {
   width: 80%;
-}
-
-
-.background {
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 footer {
