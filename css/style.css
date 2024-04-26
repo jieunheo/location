@@ -186,13 +186,25 @@ h3 {
   padding: 1rem;
 }
 
-
-.info {
-  font-family: "Gowun Dodum", "Gowun Dodum", sans-serif;
+.div_wrap {
   max-width: 550px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.intro {
+  margin-top: 1rem;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  font-size: 1.1rem;
+}
+.bold {
+  font-weight: bold;
+}
+
+.info {
+  font-family: "Gowun Dodum", "Gowun Dodum", sans-serif;
   margin-top: 1rem;
   margin-bottom: 1rem;
 
@@ -254,6 +266,18 @@ footer {
     font-size: 1rem;
     margin-top: 5vw;
   }
+
+
+  .intro {
+    margin-top: 1vw;
+    padding: 3rem 2rem;
+    font-size: 0.9rem;
+  }
+  .intro .poem {
+    font-style: italic;
+  }
+
+
   .info .info_date {
     font-size: 1.7rem;
   }
@@ -332,6 +356,9 @@ footer {
 .type0 .line {
   color: var(--type0);
 }
+.type0 .em {
+  color: var(--type0);
+}
 
 .type1 {
   background-image: url('../img/blossoms_bg.webp');
@@ -350,6 +377,9 @@ footer {
 .type1 .line {
   color: var(--type1);
 }
+.type1 .em {
+  color: var(--type1);
+}
 
 .type2 {
   background-image: url('../img/leaf_bg.webp');
@@ -366,6 +396,9 @@ footer {
   color: var(--type2);
 }
 .type2 .line {
+  color: var(--type2);
+}
+.type2 .em {
   color: var(--type2);
 }
 
