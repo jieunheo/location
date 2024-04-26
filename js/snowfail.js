@@ -28,7 +28,7 @@ function(t) {
           this.x = s,
           this.y = n,
           this.size = a,
-          this.speed = o * 0.5,
+          this.speed = o * 0.3,
           this.step = 0,
           this.stepSize = h(1, 10) / 100,
           i.collection && (this.target = m[h(0, m.length - 1)]);
