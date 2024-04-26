@@ -21,6 +21,7 @@
 
   <script defer src="./js/jquery.min.js"></script>
   <script defer src="./js/blossom.js"></script>
+  <script defer src="./js/snowfail.js"></script>
   <script>
     window.onload = function () {
       const randomNum = Math.random() * 2;
@@ -34,6 +35,9 @@
 
       // 흩날리는 애니메이션 적용
       $('body').sakura();
+      // $(function() {
+      //   $('body').snowfall({image :`/img/${type}_fail.png`, minSize: 8, maxSize: 18, flakeCount: 6});
+      // });
     }
 
     // 배경음악 설정
@@ -97,6 +101,12 @@
       $('body').removeClass('type0 type1 type2');
       $('body').addClass('type'+type);
 
+      // const snowfail = document.querySelectorAll(".snowfall-flakes");
+      // snowfail.forEach(img => {
+      //   console.log(img);
+      //   img.attributes.src = `/img/${type}_fail.png`;
+      // });
+
       // 현재 배경 버튼 텍스트 수정
       let type_name = 'Sky';
       switch (type) {
@@ -119,13 +129,14 @@
       setTimeout(() => {
         $("#checkbox").prop("checked", true);
       }, 100);
+
     }
   </script>
   
   <link preload href="//fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gowun+Dodum&display=swap" rel="stylesheet">
 </head>
 <body id="type">
-  <main>
+  <header>
     <div class="types_wrap">
       <div class="flex">
         <div class="music">
@@ -140,7 +151,9 @@
         <div id="name2" class="types_name" data-type="L"><button onclick="go_type(2)">L</button></div>
       </div>
     </div>
+  </header>
 
+  <main>
     <div class="photo-wrap">
       <h1>Wedding Day</h1>
       <h2>2024.08.31</h2>
@@ -224,6 +237,7 @@
       </div>
     </div>
   </main>
+
   <footer>
     <p>Copyright (c) <b>HeoJieun</b> All Rights Reserved.</p>
   </footer>
