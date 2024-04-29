@@ -28,9 +28,9 @@ function(t) {
           this.x = s,
           this.y = n,
           this.size = a,
-          this.speed = o * 0.3,
+          this.speed = o * 0.2,
           this.step = 0,
-          this.stepSize = h(1, 10) / 100,
+          this.stepSize = h(5, 100) / 10000,
           i.collection && (this.target = m[h(0, m.length - 1)]);
           var r = null;
           r = document.createElement("div"),
@@ -106,7 +106,7 @@ function(t) {
           minSize: 1,
           maxSize: 2,
           minSpeed: 1,
-          maxSpeed: 5,
+          maxSpeed: 3,
           round: !1,
           shadow: !1,
           collection: !1,
