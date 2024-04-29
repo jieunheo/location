@@ -269,7 +269,7 @@ h3 {
 
 .contact {
   width: 100%;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: rgba(255,255,255,0.8);
@@ -285,7 +285,7 @@ h3 {
 
 .contact_row {
   display: flex;
-  padding: 1rem 0;
+  padding: 0.8rem 0;
 }
 
 .icon_block {
