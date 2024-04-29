@@ -259,6 +259,7 @@ h3 {
   height: 110vw;
   max-height: 650px;
   overflow: hidden;
+  background-size: cover !important;
 }
 
 .slider-nav {
@@ -267,8 +268,9 @@ h3 {
 .slider-nav .slick-slide {
   width: 15vw;
   height: 30vw;
-  max-height: 170px;
+  max-height: 140px;
   overflow: hidden;
+  background-size: cover !important;
 }
 
 
