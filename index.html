@@ -23,6 +23,11 @@
 
   <script defer src="./js/jquery.min.js"></script>
   <script defer src="./js/snowfail.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script defer type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script defer type="text/javascript" src="slick/slick.min.js"></script>
   <script>
     window.onload = function () {
       const randomNum = Math.random() * 2;
@@ -49,6 +54,24 @@
           bgm.pause();
         }
       });
+
+      $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        arrows: false,
+        centerMode: true,
+        focusOnSelect: true
+      });
+          
     }
 
     // 디데이 설정
@@ -148,9 +171,9 @@
   <main>
     <div class="background">
       <div class="photo-wrap">
-        <h1>Wedding Day</h1>
-        <h2>2024.08.31</h2>
-        <div class="img">
+        <h1 class="text_shadow">Wedding Day</h1>
+        <h2 class="text_shadow">2024.08.31</h2>
+        <div class="img text_shadow">
           <p class="day">D-<span id="day_count">Day</span></p>
           <p class="time">
             <span id="hours">00</span> :
@@ -185,103 +208,137 @@
       </div>
     </div>
 
-    <div class="intro div_wrap">
-      <div class="poem">
-        예쁘지 않은 것을 예쁘게<br>
-        보아주는 것이 <span class="em bold">사랑</span>이다<br>
-        <br>
-        좋지 않은 것을 좋게<br>
-        생각해주는 것이 <span class="em bold">사랑</span>이다<br>
-        <br>
-        싫은 것도 잘 참아주면서<br>
-        처음만 그런 것이 아니라<br>
-        <br>
-        <span class="bold">나중까지 아주 나중까지<br></span>
-        그렇게 하는 것이 <span class="em bold">사랑</span>이다.<br>
-        <br>
-        <span>사랑에 답함 - 나태주</span>
-      </div>
-    </div>
+    <div class="div_wrap">
+      <div class="title">Intro</div>
 
-    <div class="info div_wrap">
-      <div class="info_date">8월 31일</div>
-      <div class="info_time">토요일 오후 1:00</div>
-      <div class="info_place">전주 아름다운컨벤션 2층 피에스타홀</div>
-    </div>
-
-    <div class="calender div_wrap">
-      <div class="main_dday_area fib">
-        <div class="main_dday_time_wrapper">
-          <div class="main_dday_date">
-            8월
-          </div>
-        </div>
-        <div class="main_dday_calendar">
-          <table>
-          <tbody>
-            <tr><th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
-            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>2</td><td>3</td></tr>
-            <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
-            <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr>
-            <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
-            <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td><span class="dday">31</span></td></tr>
-          </tbody>
-          </table>
-        </div>
-        <div class="main_dday_wrapper">
-          * 예식일이 <span id="main_dday_text">9</span> 일 남았습니다.
+      <div class="intro">
+        <div class="poem">
+          예쁘지 않은 것을 예쁘게<br>
+          보아주는 것이 <span class="em bold">사랑</span>이다<br>
+          <br>
+          좋지 않은 것을 좋게<br>
+          생각해주는 것이 <span class="em bold">사랑</span>이다<br>
+          <br>
+          싫은 것도 잘 참아주면서<br>
+          처음만 그런 것이 아니라<br>
+          <br>
+          <span class="bold">나중까지 아주 나중까지<br></span>
+          그렇게 하는 것이 <span class="em bold">사랑</span>이다.<br>
+          <br>
+          <span>사랑에 답함 - 나태주</span>
         </div>
       </div>
     </div>
 
-    <div class="contact div_wrap">
-      <div class="contact_title">축하 연락처</div> 
+    <div class="div_wrap">
+      <div class="day_title title">Wedding Day</div>
 
-      <div class="contact_wrap">
-        <div class="contact_group">
-          <div class="contact_row">
-            <div class="name_block">신랑 조하진</div>
-            <div class="icon_block">
-              <span><a class="contact_icon_block contact_tel_img" href="tel:01045820187"><span class="material-symbols-outlined">smartphone</span></a></span>
-              <span><a class="contact_icon_block contact_msg_img" href="sms:01045820187"><span class="material-symbols-outlined">sms</span></a></span>
+      <div class="info">
+        <div class="info_date">8월 31일</div>
+        <div class="info_time">토요일 오후 1:00</div>
+        <div class="info_place">전주 아름다운컨벤션 2층 피에스타홀</div>
+      </div>
+
+      <div class="calender">
+        <div class="main_dday_area fib">
+          <div class="main_dday_time_wrapper">
+            <div class="main_dday_date">
+              8월
             </div>
           </div>
-          <div class="contact_row">
-            <div class="name_block">아버님 조현용</div>
-            <div class="icon_block">
-              <span><a class="contact_icon_block contact_tel_img" href="tel:01063380197"><span class="material-symbols-outlined">smartphone</span></a></span>
-              <span><a class="contact_icon_block contact_msg_img" href="sms:01063380197"><span class="material-symbols-outlined">sms</span></a></span>
-            </div>
+          <div class="main_dday_calendar">
+            <table>
+            <tbody>
+              <tr><th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>
+              <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>2</td><td>3</td></tr>
+              <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+              <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr>
+              <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+              <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td><span class="dday">31</span></td></tr>
+            </tbody>
+            </table>
           </div>
-          <div class="contact_row">
-            <div class="name_block">어머님 송효순</div>
-            <div class="icon_block">
-              <span><a class="contact_icon_block contact_tel_img" href="tel:01047020187"><span class="material-symbols-outlined">smartphone</span></a></span>
-              <span><a class="contact_icon_block contact_msg_img" href="sms:01047020187"><span class="material-symbols-outlined">sms</span></a></span>
-            </div>
+          <div class="main_dday_wrapper">
+            * 예식일이 <span id="main_dday_text">9</span> 일 남았습니다.
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="contact_group">
-          <div class="contact_row">
-            <div class="name_block">신부 허지은</div>
-            <div class="icon_block">
-              <span><a class="contact_icon_block contact_tel_img" href="tel:01077941204"><span class="material-symbols-outlined">smartphone</span></a></span>
-              <span><a class="contact_icon_block contact_msg_img" href="sms:01077941204"><span class="material-symbols-outlined">sms</span></a></span>
+    <div class="div_wrap">
+      <div class="gallery">
+        <div class="gallery_title title">Gallery</div>
+        <div class="slider-for">
+          <div><img alt="" src="./img/gallery/KakaoTalk_20240426_171809145.jpg"></div>
+          <div><img alt="" src="./img/gallery/KakaoTalk_20240426_171809145_01.jpg"></div>
+          <div><img alt="" src="./img/gallery/KakaoTalk_20240426_171809145_02.jpg"></div>
+          <div><img alt="" src="./img/gallery/KakaoTalk_20240426_171809145_04.jpg"></div>
+          <div><img alt="" src="./img/gallery/KakaoTalk_20240426_171809145_05.jpg"></div>
+          <div><img alt="" src="./img/gallery/KakaoTalk_20240426_171809145_06.jpg"></div>
+        </div>
+
+        
+        <div class="slider-nav">
+          <div><img alt="" src="./img/gallery/KakaoTalk_20240426_171809145.jpg"></div>
+          <div><img alt="" src="./img/gallery/KakaoTalk_20240426_171809145_01.jpg"></div>
+          <div><img alt="" src="./img/gallery/KakaoTalk_20240426_171809145_02.jpg"></div>
+          <div><img alt="" src="./img/gallery/KakaoTalk_20240426_171809145_04.jpg"></div>
+          <div><img alt="" src="./img/gallery/KakaoTalk_20240426_171809145_05.jpg"></div>
+          <div><img alt="" src="./img/gallery/KakaoTalk_20240426_171809145_06.jpg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="div_wrap">
+      <div class="title">Contact</div>
+
+      <div class="contact">
+        <div class="contact_wrap">
+          <div class="contact_group">
+            <div class="contact_row">
+              <div class="name_block">신랑 조하진</div>
+              <div class="icon_block">
+                <span><a class="contact_icon_block contact_tel_img" href="tel:01045820187"><span class="material-symbols-outlined">smartphone</span></a></span>
+                <span><a class="contact_icon_block contact_msg_img" href="sms:01045820187"><span class="material-symbols-outlined">sms</span></a></span>
+              </div>
+            </div>
+            <div class="contact_row">
+              <div class="name_block">아버님 조현용</div>
+              <div class="icon_block">
+                <span><a class="contact_icon_block contact_tel_img" href="tel:01063380197"><span class="material-symbols-outlined">smartphone</span></a></span>
+                <span><a class="contact_icon_block contact_msg_img" href="sms:01063380197"><span class="material-symbols-outlined">sms</span></a></span>
+              </div>
+            </div>
+            <div class="contact_row">
+              <div class="name_block">어머님 송효순</div>
+              <div class="icon_block">
+                <span><a class="contact_icon_block contact_tel_img" href="tel:01047020187"><span class="material-symbols-outlined">smartphone</span></a></span>
+                <span><a class="contact_icon_block contact_msg_img" href="sms:01047020187"><span class="material-symbols-outlined">sms</span></a></span>
+              </div>
             </div>
           </div>
-          <div class="contact_row">
-            <div class="name_block">아버님 허 롱</div>
-            <div class="icon_block">
-              <span><a class="contact_icon_block contact_tel_img" href="tel:01022495649"><span class="material-symbols-outlined">smartphone</span></a></span>
-              <span><a class="contact_icon_block contact_msg_img" href="sms:01022495649"><span class="material-symbols-outlined">sms</span></a></span>
+
+          <div class="contact_group">
+            <div class="contact_row">
+              <div class="name_block">신부 허지은</div>
+              <div class="icon_block">
+                <span><a class="contact_icon_block contact_tel_img" href="tel:01077941204"><span class="material-symbols-outlined">smartphone</span></a></span>
+                <span><a class="contact_icon_block contact_msg_img" href="sms:01077941204"><span class="material-symbols-outlined">sms</span></a></span>
+              </div>
             </div>
-          </div>
-          <div class="contact_row">
-            <div class="name_block">어머님 박순임</div>
-            <div class="icon_block">
-              <span><a class="contact_icon_block contact_tel_img" href="tel:01029495649"><span class="material-symbols-outlined">smartphone</span></a></span>
-              <span><a class="contact_icon_block contact_msg_img" href="sms:01029495649"><span class="material-symbols-outlined">sms</span></a></span>
+            <div class="contact_row">
+              <div class="name_block">아버님 허 롱</div>
+              <div class="icon_block">
+                <span><a class="contact_icon_block contact_tel_img" href="tel:01022495649"><span class="material-symbols-outlined">smartphone</span></a></span>
+                <span><a class="contact_icon_block contact_msg_img" href="sms:01022495649"><span class="material-symbols-outlined">sms</span></a></span>
+              </div>
+            </div>
+            <div class="contact_row">
+              <div class="name_block">어머님 박순임</div>
+              <div class="icon_block">
+                <span><a class="contact_icon_block contact_tel_img" href="tel:01029495649"><span class="material-symbols-outlined">smartphone</span></a></span>
+                <span><a class="contact_icon_block contact_msg_img" href="sms:01029495649"><span class="material-symbols-outlined">sms</span></a></span>
+              </div>
             </div>
           </div>
         </div>
