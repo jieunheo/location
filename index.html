@@ -40,7 +40,7 @@
       dayCount();
 
       // 흩날리는 애니메이션 적용
-        $('body').snowfall({minSize: 8, maxSize: 18, flakeCount: 8});
+      $('body').snowfall({minSize: 8, maxSize: 18, flakeCount: 8});
 
       // 배경음악 설정
       var bgm = document.getElementById('bgm');
@@ -55,6 +55,7 @@
         }
       });
 
+      // 갤러리 이미지 슬라이드
       $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -115,6 +116,7 @@
       }
     }
 
+    // 타입 설정
     function go_type(type) {
       let old_class = document.getElementById("type").classList.item(0);
       if(old_class == "type"+type) return;
