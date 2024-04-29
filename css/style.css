@@ -305,8 +305,8 @@ h3 {
   border-radius: 40px;
 }
 
-.icon_block .material-symbols-outlined {
-  transform: translateY(10px);
+.icon_block object {
+  transform: translateY(9px);
 }
 
 footer {
@@ -507,8 +507,8 @@ footer {
 .type0 .contact {
   background-color: rgba(var(--type0_rgb),0.1);
 }
-.type0 .icon_block .material-symbols-outlined {
-  color: var(--type0);
+.type0 .icon_block svg {
+  fill:var(--type0);
 }
 
 
@@ -540,8 +540,8 @@ footer {
 .type1 .contact {
   background-color: rgba(255, 255, 255, 0.6);
 }
-.type1 .icon_block .material-symbols-outlined {
-  color: var(--type1);
+.type1 .icon_block svg {
+  fill:var(--type1);
 }
 
 .type2 {
@@ -572,8 +572,8 @@ footer {
 .type2 .contact {
   background-color: rgba(255, 255, 255, 0.6);
 }
-.type2 .icon_block .material-symbols-outlined {
-  color: var(--type2);
+.type2 .icon_block svg {
+  fill:var(--type2);
 }
 
 
