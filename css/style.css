@@ -76,9 +76,6 @@ header .types_wrap button {
 
 .background {
   overflow: hidden;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   box-sizing: border-box;
 }
 
@@ -360,7 +357,17 @@ footer {
   background-color: #edf8fe;
 }
 .type0 .background {
-  background-image: url('../img/sky_bg.webp');
+  background: linear-gradient(
+    to bottom,
+    rgba(237,248,254, 0) 10%,
+    rgba(237,248,254, 0.5) 40%,
+    rgba(237,248,254, 0.7) 60%,
+    rgba(237,248,254, 1) 100%
+  ),
+  url('../img/sky_bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .type0 .img {
   background-image: url('../img/sky.webp');
@@ -384,6 +391,9 @@ footer {
 }
 .type1 .background {
   background-image: url('../img/blossoms_bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .type1 .img {
   background-image: url('../img/blossoms.webp');
@@ -407,6 +417,9 @@ footer {
 }
 .type2 .background {
   background-image: url('../img/leaf_bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .type2 .img {
   background-image: url('../img/leaf.webp');
