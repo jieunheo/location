@@ -20,7 +20,6 @@
   <link rel="stylesheet" href="./css/calender.css">
 
   <script defer src="./js/jquery.min.js"></script>
-  <!-- <script defer src="./js/blossom.js"></script> -->
   <script defer src="./js/snowfail.js"></script>
   <script>
     window.onload = function () {
@@ -34,7 +33,6 @@
       dayCount();
 
       // 흩날리는 애니메이션 적용
-      // $('body').sakura();
         $('body').snowfall({minSize: 8, maxSize: 18, flakeCount: 6});
 
       // 배경음악 설정
@@ -98,12 +96,6 @@
 
       $('body').removeClass('type0 type1 type2');
       $('body').addClass('type'+type);
-
-      // const snowfail = document.querySelectorAll(".snowfall-flakes");
-      // snowfail.forEach(img => {
-      //   console.log(img);
-      //   img.attributes.src = `/img/${type}_fail.png`;
-      // });
 
       // 현재 배경 버튼 텍스트 수정
       let type_name = 'Sky';
