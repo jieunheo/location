@@ -580,14 +580,3 @@ footer {
 .contact_member_action object {
   fill: #ff0000;
 }
-
-
-
-
-.snowfall-flakes {
-  /* -webkit-animation: 16.512s linear 0s 1 normal none running fall, 18s linear 0s infinite normal none running blow-medium-right, 3s linear 0s infinite normal none running sway-5; */
-  /* -o-animation: 16.512s linear 0s 1 normal none running fall, 18s linear 0s infinite normal none running blow-medium-right, 3s linear 0s infinite normal none running sway-5; */
-  /* -ms-animation: 16.512s linear 0s 1 normal none running fall, 18s linear 0s infinite normal none running blow-medium-right, 3s linear 0s infinite normal none running sway-5; */
-  /* -moz-animation: 16.512s linear 0s 1 normal none running fall, 18s linear 0s infinite normal none running blow-medium-right, 3s linear 0s infinite normal none running sway-5; */
-  /* animation: 16.512s linear 0s 1 normal none running fall, 18s linear 0s infinite normal none running blow-medium-right, 3s linear 0s infinite normal none running sway-5; */
-}
