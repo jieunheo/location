@@ -465,6 +465,10 @@ footer {
     transform: translateY(6px);
   }
 
+  .icon_block object {
+    transform: translateY(5px);
+  }
+
   footer {
     font-size: 0.8rem;
   }
