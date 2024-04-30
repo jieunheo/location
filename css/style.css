@@ -302,9 +302,6 @@ h3 {
   gap: 0.5rem;
 }
 
-.icon_block .account_icon {
-  /* overflow: hidden; */
-}
 .icon_block .account_icon button {
   background: none;
   width: 100%;

@@ -148,16 +148,17 @@
     }
   
     // 계좌 복사
-    function copyAccount(bank, account) {
-      var account_value = bank + " " + account;
-      var input = document.createElement("input");
-      input.setAttribute("value", account_value);
-      document.body.appendChild(input);
-      input.select();
-      document.execCommand("copy");
-      document.body.removeChild(input);
-      alert(account_value + " 복사되었습니다.")
-    }
+    // function copyAccount(bank, account) {
+    //   var account_value = bank + " " + account;
+    //   var input = document.createElement("input");
+    //   input.setAttribute("value", account_value);
+    //   document.body.appendChild(input);
+    //   input.select();
+    //   document.execCommand("copy");
+    //   document.body.removeChild(input);
+
+    //   alert(account_value + " 복사되었습니다.")
+    // }
 
 
   </script>
@@ -314,7 +315,7 @@
               <div class="icon_block">
                 <span><a class="contact_icon_block" href="tel:01045820187"><object data="./img/smartphone.svg"></object></a></span>
                 <span><a class="contact_icon_block" href="sms:01045820187"><object data="./img/sms.svg"></object></a></span>
-                <span class="account_icon"><button onclick="copyAccount('신한','110477719163')"><object data="./img/account.svg"></object></button></span>
+                <!-- <span class="account_icon"><button onclick="copyAccount('신한','110477719163')"><object data="./img/account.svg"></object></button></span> -->
               </div>
             </div>
             <div class="contact_row">
@@ -341,7 +342,7 @@
               <div class="icon_block">
                 <span><a class="contact_icon_block" href="tel:01077941204"><object data="./img/smartphone.svg"></object></a></span>
                 <span><a class="contact_icon_block" href="sms:01077941204"><object data="./img/sms.svg"></object></a></span>
-                <span class="account_icon"><button onclick="copyAccount('신한','110434260738')"><object data="./img/account.svg"></object></button></span>
+                <!-- <span class="account_icon"><button onclick="copyAccount('신한','110434260738')"><object data="./img/account.svg"></object></button></span> -->
               </div>
             </div>
             <div class="contact_row">
@@ -349,7 +350,7 @@
               <div class="icon_block">
                 <span><a class="contact_icon_block" href="tel:01022495649"><object data="./img/smartphone.svg"></object></a></span>
                 <span><a class="contact_icon_block" href="sms:01022495649"><object data="./img/sms.svg"></object></a></span>
-                <span class="account_icon"><button onclick="copyAccount('농협','3021348966561')"><object data="./img/account.svg"></object></button></span>
+                <!-- <span class="account_icon"><button onclick="copyAccount('농협','3021348966561')"><object data="./img/account.svg"></object></button></span> -->
               </div>
             </div>
             <div class="contact_row">
@@ -357,7 +358,7 @@
               <div class="icon_block">
                 <span><a class="contact_icon_block" href="tel:01029495649"><object data="./img/smartphone.svg"></object></a></span>
                 <span><a class="contact_icon_block" href="sms:01029495649"><object data="./img/sms.svg"></object></a></span>
-                <span class="account_icon"><button onclick="copyAccount('농협','50181252050576')"><object data="./img/account.svg"></object></button></span>
+                <!-- <span class="account_icon"><button onclick="copyAccount('농협','50181252050576')"><object data="./img/account.svg"></object></button></span> -->
               </div>
             </div>
           </div>
