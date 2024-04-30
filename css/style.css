@@ -299,7 +299,16 @@ h3 {
 .icon_block {
   margin-left: auto;
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
+}
+
+.icon_block .account_icon {
+  /* overflow: hidden; */
+}
+.icon_block .account_icon button {
+  background: none;
+  width: 100%;
+  height: 100%;
 }
 
 .icon_block > span {
@@ -312,6 +321,9 @@ h3 {
 
 .icon_block object {
   transform: translateY(9px);
+}
+.icon_block .account_icon object {
+  transform: translateY(3px);
 }
 
 footer {
@@ -458,7 +470,7 @@ footer {
   }
   
   .icon_block {
-    gap: 0.6rem;
+    gap: 0.4rem;
   }
 
   .icon_block > span {
@@ -519,6 +531,9 @@ footer {
 .type0 .icon_block svg {
   fill:var(--type0);
 }
+.type0 .icon_block .account_icon {
+  background-color: rgba(var(--type0_rgb), 0.3);
+}
 
 
 .type1 {
@@ -552,6 +567,9 @@ footer {
 .type1 .icon_block svg {
   fill:var(--type1);
 }
+.type1 .icon_block .account_icon {
+  background-color: rgba(var(--type1_rgb), 0.3);
+}
 
 .type2 {
   background-color: #447ad4;
@@ -581,8 +599,8 @@ footer {
 .type2 .contact {
   background-color: rgba(255, 255, 255, 0.6);
 }
-.type2 .icon_block svg {
-  fill:var(--type2);
+.type2 .icon_block .account_icon {
+  background-color: rgba(var(--type2_rgb), 0.3);
 }
 
 
