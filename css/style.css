@@ -322,10 +322,10 @@ h3 {
   height: 100%;
 }
 
-.icon_block object {
+.icon_block img {
   transform: translateY(9px);
 }
-.icon_block .account_icon object {
+.icon_block .account_icon img {
   transform: translateY(3px);
 }
 
@@ -485,7 +485,7 @@ footer {
     transform: translateY(6px);
   }
 
-  .icon_block object {
+  .icon_block img {
     transform: translateY(5px);
   }
 
