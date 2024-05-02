@@ -264,7 +264,7 @@ h3 {
 
 .slider-for .slick-slide {
   width: 80vw;
-  height: 110vw;
+  height: 140vw;
   max-height: 650px;
   overflow: hidden;
   background-size: cover !important;
@@ -462,7 +462,7 @@ footer {
 
   .slider-for .slick-slide {
     width: 80vw;
-    height: 100vw;
+    height: 120vw;
   }
   .slider-nav .slick-slide {
     width: 15vw;
