@@ -204,6 +204,14 @@ h3 {
   margin-right: auto;
 }
 
+.greetings {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  font-size: 1.1rem;
+}
+
 .intro {
   width: 100%;
   margin-top: 3rem;
@@ -381,6 +389,12 @@ footer {
   }
 
 
+
+  .greetings {
+    margin-top: 3vw;
+    padding: 3rem 1rem;
+    font-size: 0.9rem;
+  }
   .intro {
     margin-top: 12vw;
     padding: 3rem 2rem;
