@@ -148,8 +148,16 @@
     }
   
     // 계좌 복사
-    function copyAccount(bank, account) {
-      var account_value = bank + " " + account;
+    const account_arr = [
+      {'name' : '조하진','bank' : '신한', 'account' : '110477719163'},
+      {'name' : '조현용','bank' : '', 'account' : ''},
+      {'name' : '송효순','bank' : '', 'account' : ''},
+      {'name' : '허지은','bank' : '신한', 'account' : '110434260738'},
+      {'name' : '허롱','bank' : '농협', 'account' : '3021348966561'},
+      {'name' : '박순임','bank' : '농협', 'account' : '50181252050576'},
+    ];
+    function copyAccount(num) {
+      var account_value = account_arr[num]['bank'] + " " + account_arr[num]['account'] + " " + account_arr[num]['name'];
       var input = document.createElement("input");
       input.setAttribute("value", account_value);
       document.body.appendChild(input);
@@ -225,23 +233,20 @@
     </div>
 
     <div class="div_wrap">
-      <div class="title">Intro</div>
+      <div class="title">Greetings</div>
 
       <div class="intro">
         <div class="poem">
-          예쁘지 않은 것을 예쁘게<br>
-          보아주는 것이 <span class="em bold">사랑</span>이다<br>
+          평생을 같이하고 싶은 사람을 만나<br>
+          앞으로도 서로를 아껴주고<br>
+          사랑하며 살아가려 합니다.<br>
           <br>
-          좋지 않은 것을 좋게<br>
-          생각해주는 것이 <span class="em bold">사랑</span>이다<br>
+          저희 약속 위에 따뜻한 격려로 축복해 주시면<br>
+          힘찬 출발의 디딤이 되어<br>
+          믿음 위에 건강한 가정으로 세워가겠습니다.<br>
           <br>
-          싫은 것도 잘 참아주면서<br>
-          처음만 그런 것이 아니라<br>
-          <br>
-          <span class="bold">나중까지 아주 나중까지<br></span>
-          그렇게 하는 것이 <span class="em bold">사랑</span>이다.<br>
-          <br>
-          <span>사랑에 답함 - 나태주</span>
+          <span>조현용, 송효순의 차남 조하진<br></span>
+          <span>허   롱, 박순임의 차녀 허지은<br></span>
         </div>
       </div>
     </div>
@@ -306,6 +311,28 @@
     </div>
 
     <div class="div_wrap">
+      <div class="title">Intro</div>
+
+      <div class="intro">
+        <div class="poem">
+          예쁘지 않은 것을 예쁘게<br>
+          보아주는 것이 <span class="em bold">사랑</span>이다<br>
+          <br>
+          좋지 않은 것을 좋게<br>
+          생각해주는 것이 <span class="em bold">사랑</span>이다<br>
+          <br>
+          싫은 것도 잘 참아주면서<br>
+          처음만 그런 것이 아니라<br>
+          <br>
+          <span class="bold">나중까지 아주 나중까지<br></span>
+          그렇게 하는 것이 <span class="em bold">사랑</span>이다.<br>
+          <br>
+          <span>사랑에 답함 - 나태주</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="div_wrap">
       <div class="title">Contact</div>
 
       <div class="contact">
@@ -316,7 +343,7 @@
               <div class="icon_block">
                 <span><a rel="external" class="contact_icon_block" href="tel:01045820187"><img src="./img/smartphone.svg"></a></span>
                 <span><a rel="external" class="contact_icon_block" href="sms:01045820187"><img src="./img/sms.svg"></a></span>
-                <span class="account_icon"><button onclick="copyAccount('신한','110477719163')"><img src="./img/account.svg"></button></span>
+                <span class="account_icon"><button onclick="copyAccount(0)"><img src="./img/account.svg"></button></span>
               </div>
             </div>
             <div class="contact_row">
@@ -324,7 +351,7 @@
               <div class="icon_block">
                 <span><a rel="external" class="contact_icon_block" href="tel:01063380197"><img src="./img/smartphone.svg"></a></span>
                 <span><a rel="external" class="contact_icon_block" href="sms:01063380197"><img src="./img/sms.svg"></a></span>
-                <!-- <span class="account_icon"><button onclick="copyAccount('','')"><img src="./img/account.svg"></button></span> -->
+                <!-- <span class="account_icon"><button onclick="copyAccount(1)"><img src="./img/account.svg"></button></span> -->
               </div>
             </div>
             <div class="contact_row">
@@ -332,7 +359,7 @@
               <div class="icon_block">
                 <span><a rel="external" class="contact_icon_block" href="tel:01047020187"><img src="./img/smartphone.svg"></a></span>
                 <span><a rel="external" class="contact_icon_block" href="sms:01047020187"><img src="./img/sms.svg"></a></span>
-                <!-- <span class="account_icon"><button onclick="copyAccount('','')"><img src="./img/account.svg"></button></span> -->
+                <!-- <span class="account_icon"><button onclick="copyAccount(2)"><img src="./img/account.svg"></button></span> -->
               </div>
             </div>
           </div>
@@ -343,7 +370,7 @@
               <div class="icon_block">
                 <span><a rel="external" class="contact_icon_block" href="tel:01077941204"><img src="./img/smartphone.svg"></a></span>
                 <span><a rel="external" class="contact_icon_block" href="sms:01077941204"><img src="./img/sms.svg"></a></span>
-                <span class="account_icon"><button onclick="copyAccount('신한','110434260738')"><img src="./img/account.svg"></button></span>
+                <span class="account_icon"><button onclick="copyAccount(3)"><img src="./img/account.svg"></button></span>
               </div>
             </div>
             <div class="contact_row">
@@ -351,7 +378,7 @@
               <div class="icon_block">
                 <span><a rel="external" class="contact_icon_block" href="tel:01022495649"><img src="./img/smartphone.svg"></a></span>
                 <span><a rel="external" class="contact_icon_block" href="sms:01022495649"><img src="./img/sms.svg"></a></span>
-                <span class="account_icon"><button onclick="copyAccount('농협','3021348966561')"><img src="./img/account.svg"></button></span>
+                <span class="account_icon"><button onclick="copyAccount(4)"><img src="./img/account.svg"></button></span>
               </div>
             </div>
             <div class="contact_row">
@@ -359,7 +386,7 @@
               <div class="icon_block">
                 <span><a rel="external" class="contact_icon_block" href="tel:01029495649"><img src="./img/smartphone.svg"></a></span>
                 <span><a rel="external" class="contact_icon_block" href="sms:01029495649"><img src="./img/sms.svg"></a></span>
-                <span class="account_icon"><button onclick="copyAccount('농협','50181252050576')"><img src="./img/account.svg"></button></span>
+                <span class="account_icon"><button onclick="copyAccount(5)"><img src="./img/account.svg"></button></span>
               </div>
             </div>
           </div>
