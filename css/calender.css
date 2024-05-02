@@ -50,8 +50,6 @@
 
 .main_dday_area .main_dday_calendar {
 	margin: 0 40px; 
-	padding: 20px 0;
-	/*border-top: 1px solid #e2e2e2;*/
 	border-bottom: 1px solid #e2e2e2;
 }
 
@@ -115,9 +113,6 @@
   .main_dday_area .main_dday_time_wrapper {
     margin-bottom: 5vw;
   }
-  .main_dday_area .main_dday_calendar {
-    padding: 5vw 0;
-  }
   .main_dday_area .main_dday_calendar table td span.dday {
     width: 20px;
     height: 20px;
@@ -133,6 +128,5 @@
   }
   .main_dday_area .main_dday_calendar {
     margin: 0 auto;
-    padding: 3vw 0;
   }
 }
