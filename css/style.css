@@ -197,6 +197,20 @@ h3 {
   padding: 1rem;
 }
 
+#show_btn, #hidden_btn {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  color: #fff;
+  border-radius: 1rem;
+}
+#hidden_btn {
+  display: none;
+}
+#more_wrap {
+  display: none;
+}
+
 .div_wrap {
   max-width: 500px;
   width: 90%;
@@ -551,6 +565,9 @@ footer {
 .type0 .icon_block .account_icon {
   background-color: rgba(var(--type0_rgb), 0.3);
 }
+.type0 #show_btn, .type0 #hidden_btn {
+  background-color: rgb(var(--type0_rgb));
+}
 
 
 .type1 {
@@ -587,6 +604,9 @@ footer {
 .type1 .icon_block .account_icon {
   background-color: rgba(var(--type1_rgb), 0.3);
 }
+.type1 #show_btn, .type1 #hidden_btn {
+  background-color: rgb(var(--type1_rgb));
+}
 
 .type2 {
   background-color: #447ad4;
@@ -618,6 +638,9 @@ footer {
 }
 .type2 .icon_block .account_icon {
   background-color: rgba(var(--type2_rgb), 0.3);
+}
+.type2 #show_btn, .type2 #hidden_btn {
+  background-color: rgb(var(--type2_rgb));
 }
 
 
